@@ -22,7 +22,7 @@ function woodCalculator(chair,table,bed){
 
     }
     else{
-        wood = 1*chair + 3*table + 5*bed;
+        wood = 1*chair + 3*table + 5*bed; // per chair 1, per table 3 and per bed 5 cubic feet wood needed
         return wood;
 
     }
@@ -39,19 +39,19 @@ function brickCalculator(number){
         return "Invalid"
     }
     else if(number<=10){
-        brick=number*15000;
+        brick=number*15000; // up to 10th 15*1000= 15000
         return brick;
 
     }
     else if(number>10 &&number<=20){
-        var tenPlus = (number-10)*12000;
-        brick = tenPlus + 150000 ;
+        var tenPlus = (number-10)*12000; // 12*1000= 12000
+        brick = tenPlus + 150000 ; // up to 10th 15000
         return brick;
 
     }
     else{
-        var twentyPlus =(number-20)*10000;
-        brick = twentyPlus + 120000+ 150000 ;
+        var twentyPlus =(number-20)*10000; // except the above rest are 10 * 1000 = 10000
+        brick = twentyPlus + 120000+ 150000 ; // up to 10th 15000 and up to  20th 12000
         return brick;
 
     }
